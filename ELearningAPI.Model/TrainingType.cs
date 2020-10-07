@@ -6,16 +6,12 @@ using System.Text;
 
 namespace ELearningAPI.Data.Models
 {
-	public partial class Training
+	public class TrainingType
 	{
-		[Required]
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-		public int TrainingId { get; set; }
-		[Required]
 		public int TrainingTypeId { get; set; }
-		public TrainingType TrainigType { get; set; }
-
-		public ICollection<Subscription> Subscriptions { get; set; }
+		[Required]
+		public string Name { get; set; }
 	}
 }

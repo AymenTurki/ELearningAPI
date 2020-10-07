@@ -5,15 +5,15 @@ using System.Text;
 
 namespace ELearningAPI.Data.Models
 {
-	public partial class UserRole
+	public class Subscription
 	{
-		[Key]
 		[Required]
+		[Key]
 		public int UserId { get; set; }
 		public User User { get; set; }
-		[Key]
 		[Required]
-		public int RoleId { get; set; }
-		public Role Role { get; set; }
+		[Key]
+		public int TrainingId { get; set; }
+		public Training Training { get; set; }
 	}
 }

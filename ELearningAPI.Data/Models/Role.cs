@@ -6,12 +6,11 @@ using System.Text;
 
 namespace ELearningAPI.Data.Models
 {
-	public class Role
+	public partial class Role
 	{
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-		public int RoleId { get; set; }
-		public string Name { get; set; }
+		public int RoleId { get; private set; }
 
 		public ICollection<UserRole> UserRoles { get; set; }
 	}

@@ -5,11 +5,11 @@ using System.Text;
 
 namespace ELearningAPI.Data.Models
 {
-	public class Subscription
+	public partial class Subscription
 	{
 		[Required]
 		[Key]
-		public int UserId { get; set; }
+		public int UserId { get; private set; }
 		public User User { get; set; }
 		[Required]
 		[Key]

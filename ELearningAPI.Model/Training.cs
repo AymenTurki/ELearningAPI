@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ELearningAPI.Data.Models
 {
-	public partial class Training
+	public class Training
 	{
 		[Required]
 		[Key]
@@ -15,6 +15,8 @@ namespace ELearningAPI.Data.Models
 		[Required]
 		public int TrainingTypeId { get; set; }
 		public TrainingType TrainigType { get; set; }
+		[Required]
+		public string Title { get; set; }
 
 		public ICollection<Subscription> Subscriptions { get; set; }
 	}

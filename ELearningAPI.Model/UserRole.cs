@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ELearningAPI.Data.Models
 {
-	public partial class UserRole
+	public class UserRole
 	{
 		[Key]
 		[Required]

@@ -8,11 +8,6 @@ namespace ELearningAPI.Data.Models
 {
 	public partial class Class
 	{
-		[Key]
-		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-		public int ClassId { get; set; }
-		[Required]
-		public int TrainingId { get; private set; }
-		public Training Training { get; set; }
+		public DateTime Date { get; set; }
 	}
 }

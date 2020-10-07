@@ -6,10 +6,8 @@ using System.Text;
 
 namespace ELearningAPI.Data.Models
 {
-	public partial class TrainingType
+	public partial class Role
 	{
-		[Key]
-		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-		public int TrainingTypeId { get; set; }
+		public string Name { get; set; }
 	}
 }
